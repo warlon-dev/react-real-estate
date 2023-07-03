@@ -1,0 +1,245 @@
+.olp__agent {
+    background-color: var(--color-text);
+    background-image: url('../../assets/hero.webp');
+    background-attachment: fixed;
+}
+
+.olp__agent-overlay {
+    background-color: rgba(33, 60, 49, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.olp__agent h1 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 2.1875rem;
+    font-family: Lato;
+    line-height: 120%;
+    letter-spacing: 0.21875rem;
+}
+
+.olp__agent-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--color-inactive);
+    border-radius: 25px;
+    box-shadow: 15px 13px 31px 0px rgba(0, 0, 0, 0.65);
+    height: 550px;
+    max-width: 70%;
+}
+
+.olp__agent-container_image {
+    flex: 1;
+    height: 100%;
+    width: 500px;
+}
+
+.olp__agent-container_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.olp__agent-container_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.olp__agent-container_content h2 {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: Lato;
+    line-height: 130%;
+    margin-bottom: 1rem;
+}
+
+.olp__agent-container_content h3 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: Lato;
+    line-height: 130%;
+}
+
+.olp__agent-container_content h4 {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 2rem;
+    font-family: Oswald;
+    line-height: 130%;
+    letter-spacing: 0.10938rem;
+}
+
+.olp__agent-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cta__button {
+    background: #009356;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cta__button:hover {
+    background-color: #0ba364;
+}
+.cta__button:active {
+    background-color: #14c57b;
+}
+.cta__button h5 {
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+}
+.cta__button p {
+    font-family: var(--font-head);
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #e7e7e7;
+    line-height: 90%;
+}
+
+@media screen and (max-width:1500px) {
+    .olp__agent-container {
+        max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    .olp__agent-overlay{
+        padding: 4rem;
+    }
+    .olp__agent-container {
+        max-width: 100%;
+    }
+    
+    .olp__agent-container_content h2{
+        font-size: 2.5rem;
+    }
+    
+    .olp__agent-container_content h3{
+        font-size: 1.25rem;
+    }
+    .olp__agent-container_content h4{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media screen and (max-width:1000px) {
+    
+    .olp__agent-container_content {
+        padding: 2rem 1rem;
+    }
+    .olp__agent-container_content h2{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .olp__agent-container_content h3{
+        font-size: 1.2rem;
+    }
+
+    .olp__agent-container_content h4{
+        font-size: 1.25rem;
+    } 
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .olp__agent-container {
+        flex-direction: column;
+        height: 700px;
+        width: 550px;
+    }
+
+    .olp__agent-container_image {
+        width: 100%;
+        height: 100%;
+    }
+    .olp__agent-container_image img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 25px;
+    }
+
+    .olp__agent-container_content {
+        text-align: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .olp__agent-container_content div {
+    width: 100%;
+    }
+
+
+    .olp__agent h1 {
+        font-size: 2rem;
+    }
+    .olp__agent-container_content h2{
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    .olp__agent-container_content h3{
+        font-size: 1.1rem;
+    }
+
+    .olp__agent-container_content h4{
+        font-size: 1.1rem;
+    } 
+
+}
+@media screen and (max-width:650px) {
+    .olp__agent-container_image img {
+        height: 300px;
+    }
+
+    .olp__agent-overlay {
+        padding: 4rem 1.5rem;
+    }
+    .olp__agent h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .olp__agent h1 {
+        font-size: 1.5rem;
+    }
+    .olp__agent-container_content h3{
+        font-size: 1rem;
+    }
+
+}

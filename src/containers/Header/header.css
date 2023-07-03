@@ -1,0 +1,155 @@
+.olp__header {
+    background-image: url('./../../assets/hero.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.olp__header-overlay {
+    background-color: rgba(46, 55, 51, 0.61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.olp__header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.olp__header-content_logo {
+    height: 80px;
+    width: 246px;
+}
+
+.olp__header-content_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.olp__header-content_text {
+    text-align: center;
+}
+
+.olp__header-content_text h1 {
+    font-family: var(--font-head);
+    font-weight: 500;
+    font-size: 3.75rem;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+
+    margin-bottom: 3rem;
+}
+
+.olp__header-content_text span {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+
+.olp__header-content_text p {
+    font-family: var(--font-head);
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.olp__header-content_button a {
+    font-family: var(--font-head);
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 1.25rem 2rem;
+
+    background: var(--color-button);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.olp__header-content_button a:hover {
+    background-color: var(--color-subtext);
+}
+
+
+
+@media screen and (max-width:850px) {
+    .olp__header-content_text h1 {
+        font-size: 3rem;
+    }
+    .olp__header-content_text span {
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .olp__header-content_text p {
+        font-size: 20px ;
+    }
+    
+    .olp__header-content_logo {
+        height: 90px;
+        width: 223px;
+    }
+    .olp__header-content_button a {
+        font-size: 20px;
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .olp__header-content_text h1 {
+        font-size: 2.5rem;
+    }
+    .olp__header-content_text span {
+        font-weight: 500;
+        font-size: 3.5rem;
+    }
+    .olp__header-content_text p {
+        font-size: 16px ;
+    }
+    
+    .olp__header-content_logo {
+        height: 80px;
+        width: 213px;
+    }
+    .olp__header-content_button a {
+        font-size: 18px;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .olp__header-content_logo {
+        height: 50px;
+        width: 200px;
+    }
+    .olp__header-content_text h1 {
+        font-size: 2rem;
+    }
+    .olp__header-content_text span {
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+    .olp__header-content_text p {
+        font-size: 0.75rem ;
+    }
+    .olp__header-content_button a {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+}

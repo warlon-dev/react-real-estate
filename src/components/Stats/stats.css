@@ -1,0 +1,53 @@
+.olp__stats-container {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 2rem;
+}
+
+
+.olp__stats-container h2 { 
+    font-family: var(--font-head);
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #355749;
+}
+
+
+.olp__stats-container p { 
+    font-family: var(--font-head);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+    color: #355749;
+}
+
+@media screen and (max-width:1450px) {
+    .olp__stats-container{
+        margin: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .olp__stats-container{
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .olp__stats-container{
+        margin: 0rem;
+    }
+}
+
+

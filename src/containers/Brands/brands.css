@@ -1,0 +1,51 @@
+.olp__brand {
+    background-color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.olp__brand-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+@media screen and (max-width:1300px) {
+    .olp__brand-images {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .olp__brand {
+        padding: 3rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:800px) {
+    .olp__brand {
+        padding: 2rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:550px) {
+    .olp__brand {
+        padding: 2rem;
+    }
+
+    .olp__brand-images {
+       flex-wrap: wrap;
+       justify-content: center;
+       gap:1.5rem;
+
+    }
+}

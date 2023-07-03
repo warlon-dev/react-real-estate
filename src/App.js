@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { useEffect, useState } from 'react';
+import NavigationDots from './components/NavigationDots';
+import { Header, Brands, Overview, Amenities, Features, Units, Showroom, Location, Agent, Contact, Footer } from './containers'
 
 function App() {
+  const [activeDot, setActiveDot] = useState('home')
+  useEffect(() =>{
+    console.log(activeDot)
+  },[activeDot])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationDots activeDot={activeDot} setActiveDot={setActiveDot}  />
+      <Header id='home' setActiveDot={setActiveDot}/>
+      <Brands />
+      <Overview id='overview' setActiveDot={setActiveDot} />
+      <Amenities id='amenities' setActiveDot={setActiveDot} />
+      <Features id='features' setActiveDot={setActiveDot} />
+      <Units id='units' setActiveDot={setActiveDot} />
+      <Showroom id='tour' setActiveDot={setActiveDot} />
+      <Location id='location' setActiveDot={setActiveDot} />
+      <Agent id='agent' setActiveDot={setActiveDot} />
+      <Contact id='contact' setActiveDot={setActiveDot} />
+      <Footer />
     </div>
   );
 }
